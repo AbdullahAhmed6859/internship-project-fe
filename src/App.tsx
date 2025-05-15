@@ -6,7 +6,7 @@ import ApiClient from "./utils/axios";
 
 // const backend_url = "http://localhost:3000";
 async function getData() {
-  const api = ApiClient.getInstance().client;
+  const api = ApiClient.client;
   const data = await api.get("/");
   console.log(data);
 }
